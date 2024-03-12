@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination } from 'swiper/modules';
-
+import { mercedesFeatures, mercedesFeatures2  } from '@/app/utilities/cardata';
 
 import E_sedan1 from '/app/car-review/e-class-sedan/ESedanImages/E_sedan1.webp'
 import E_sedan2 from '/app/car-review/e-class-sedan/ESedanImages/E_sedan2.webp'
@@ -370,79 +370,11 @@ const E_ClassSedan = () => {
                 <div>
                 {showFeatures2 && (
                  <ul className='list-disc ml-7'>
-                  <li>Heated front seats</li>
-                  <li>40/20/40-split folding rear seats</li>
-                  <li>Dual-zone automatic climate control</li>
-                  <li>Power tilt/sliding tinted glass sunroof</li>
-                  <li>Power-folding side mirrors</li>
-                  <li>Power front seats with memory</li>
-                  <li>AMG Performance steering wheel in Nappa leather</li>
-                  <li>Steering wheel with Touch Control Buttons</li>
-                  <li>Illuminated front door sills</li>
-                  <li>Mercedes-Benz User Experience (MBUX)</li>
-                  <li>11.9-inch touchscreen central multimedia display</li>
-                  <li>12.3-inch digital instrument cluster</li>
-                  <li>Biometric authentication</li>
-                  <li>Wireless Apple CarPlay</li>
-                  <li>"Hey, Mercedes" keyword activation</li>
-                  <li>FrontBass system</li>
-                  <li>Wireless Android Auto</li>
-                  <li>Bluetooth audio streaming</li>
-                  <li>Hands-free Bluetooth interface</li>
-                  <li>HD Radio receiver</li>
-                  <li>In-car WiFi</li>
-                  <li>USB-C charging port</li>
-                  <li>Over-the-air software updates</li>
-                  <li>Voice Control with Natural Language Understanding</li>
-                  <li>SiriusXM 6-month Platinum Plan trial subscription</li>
-                  <li>Electronic trunk closer</li>
-                  <li>HANDS-FREE ACCESS</li>
-                  <li>Illuminated entry system with logo projectors</li>
-                  <li>KEYLESS-GO</li>
-                  <li>Remote opening and closing of windows and sunroof</li>
-                  <li>Garage door opener</li>
-                  <li>Handcrafted AMG 2.0L inline-4 turbo with hybrid assist</li>
-                  <li>Electric exhaust-gas turbocharger</li>
-                  <li>Hybrid Starter-Generator</li>
-                  <li>AMG SPEEDSHIFT MCT 9-speed transmission</li>
-                  <li>AMG Performance 4MATIC all-wheel drive</li>
-                  <li>AMG DYNAMIC SELECT</li>
-                  <li>AMG DRIVE UNIT</li>
-                  <li>AMG Sport Exhaust System</li>
-                  <li>ECO Start/Stop system</li>
-                  <li>4-wheel multilink suspension</li>
-                  <li>AMG Sport Suspension with AMG RIDE CONTROL</li>
-                  <li>Active rear-wheel steering</li>
-                  <li>AMG Sport Braking System</li>
-                  <li>3-stage AMG parameter steering</li>
-                  <li>ESP Dynamic Cornering Assist</li>
-                  <li>LED headlamps and taillamps</li>
-                  <li>Adaptive Highbeam Assist</li>
-                  <li>LED Daytime Running Lamps</li>
-                  <li>Car-to-X Communication</li>
-                  <li>Mercedes-Benz Emergency Call Service</li>
-                  <li>PRE-SAFE</li>
-                  <li>PRE-SAFE Sound</li>
-                  <li>Active Brake Assist</li>
-                  <li>Rearview camera</li>
-                  <li>Surround View System</li>
-                  <li>PARKTRONIC with Active Parking Assist</li>
-                  <li>Blind Spot Assist with Exit Warning Assist</li>
-                  <li>7 air bags</li>
-                  <li>Brake Assist (BAS)</li>
-                  <li>Electronic Stability Program (ESP)</li>
-                  <li>Adaptive braking technology</li>
-                  <li>SmartKey with KEYLESS-START</li>
-                  <li>Antilock Braking System (ABS)</li>
-                  <li>Antitheft alarm system</li>
-                  <li>GUARD 360° security system</li>
-                  <li>Rain-sensing windshield wipers</li>
-                  <li>Heated washer fluid</li>
-                  <li>Advanced Tire Pressure Monitoring System</li>
-                  <li>4-wheel Electronic Traction System (4-ETS)</li>
-                  <li>Rear side-impact air bags</li>
-                  <li>ATTENTION ASSIST</li>
-                  </ul>)}
+                   {mercedesFeatures.map((feature, index) => (
+                    <li key={index}>{feature}</li>
+                  ))}
+                  </ul>
+               )}
                 </div>
                 <div onClick={toggleFeatures2} className='flex text-white justify-between mt-2 border rounded-md p-2 bg-[#8d2acf]'>
                     <button>
@@ -453,7 +385,6 @@ const E_ClassSedan = () => {
                     </button>
                 </div>
              </div>
-
                <div className='mt-10 w-full max-w-[450px] p-2 pb-5 rounded-md'>
                   <Image src={irisBlue} placeholder='blur' alt="" />
                  <div className='flex font-bold font-serif justify-between'>
@@ -466,89 +397,11 @@ const E_ClassSedan = () => {
                   <div>
                    {showFeatures && (
                     <ul className='list-disc ml-7'>
-                      <li>Power front seats with memory</li>
-                      <li>Heated front seats</li>
-                      <li>40/20/40-split folding rear seats</li>
-                      <li>Dual-zone automatic climate control</li>
-                      <li>Power tilt/sliding tinted glass sunroof</li>
-                      <li>Power-folding side mirrors</li>
-                      <li>AMG Performance steering wheel in Nappa leather</li>
-                      <li>Steering wheel with Touch Control Buttons</li>
-                      <li>Enhanced ambient lighting</li>
-                      <li>Illuminated front door sills</li>
-                      <li>Mercedes-Benz User Experience (MBUX)</li>
-                      <li>11.9-inch touchscreen central multimedia display</li>
-                      <li>12.3-inch digital instrument cluster</li>
-                      <li>Biometric authentication</li>
-                      <li>"Hey, Mercedes" keyword activation</li>
-                      <li>Wireless Android Auto</li>
-                      <li>Wireless Apple CarPlay</li>
-                      <li>MB Navigation</li>
-                      <li>MBUX Augmented Video for Navigation</li>
-                      <li>No-charge online navigation map updates for 1 year</li>
-                      <li>1 year of Live Traffic Information</li>
-                      <li>Burmester 3D Surround Sound System</li>
-                      <li>Dolby Atmos</li>
-                      <li>Bluetooth audio streaming</li>
-                      <li>FrontBass system</li>
-                      <li>Hands-free Bluetooth interface</li>
-                      <li>HD Radio receiver</li>
-                      <li>In-car WiFi</li>
-                      <li>USB-C charging port</li>
-                      <li>Over-the-air software updates</li>
-                      <li>Voice Control with Natural Language Understanding</li>
-                      <li>Front-cabin wireless charging with NFC pairing</li>
-                      <li>Online Music Streaming</li>
-                      <li>SiriusXM 6-month Platinum Plan trial subscription</li>
-                      <li>AMG Head-Up Display</li>
-                      <li>Electronic trunk closer</li>
-                      <li>HANDS-FREE ACCESS</li>
-                      <li>Illuminated entry system with logo projectors</li>
-                      <li>KEYLESS-GO</li>
-                      <li>Remote opening and closing of windows and sunroof</li>
-                      <li>Garage door opener</li>
-                      <li>Handcrafted AMG 2.0L inline-4 turbo with hybrid assist</li>
-                      <li>Electric exhaust-gas turbocharger</li>
-                      <li>Hybrid Starter-Generator</li>
-                      <li>AMG SPEEDSHIFT MCT 9-speed transmission</li>
-                      <li>AMG Performance 4MATIC all-wheel drive</li>
-                      <li>AMG DYNAMIC SELECT</li>
-                      <li>AMG DRIVE UNIT</li>
-                      <li>AMG Sport Exhaust System</li>
-                      <li>ECO Start/Stop system</li>
-                      <li>4-wheel multilink suspension</li>
-                      <li>AMG Sport Suspension with AMG RIDE CONTROL</li>
-                      <li>Active rear-wheel steering</li>
-                      <li>AMG Sport Braking System</li>
-                      <li>3-stage AMG parameter steering</li>
-                      <li>ESP Dynamic Cornering Assist</li>
-                      <li>LED headlamps and taillamps</li>
-                      <li>Adaptive Highbeam Assist</li>
-                      <li>LED Daytime Running Lamps</li>
-                      <li>Car-to-X Communication</li>
-                      <li>Mercedes-Benz Emergency Call Service</li>
-                      <li>PRE-SAFE</li>
-                      <li>PRE-SAFE Sound</li>
-                      <li>Active Brake Assist</li>
-                      <li>Rearview camera</li>
-                      <li>Surround View System</li>
-                      <li>PARKTRONIC with Active Parking Assist</li>
-                      <li>Blind Spot Assist with Exit Warning Assist</li>
-                      <li>7 air bags</li>
-                      <li>Brake Assist (BAS)</li>
-                      <li>Electronic Stability Program (ESP)</li>
-                      <li>Adaptive braking technology</li>
-                      <li>SmartKey with KEYLESS-START</li>
-                      <li>Antilock Braking System (ABS)</li>
-                      <li>Antitheft alarm system</li>
-                      <li>GUARD 360° security system</li>
-                      <li>Rain-sensing windshield wipers</li>
-                      <li>Heated washer fluid</li>
-                      <li>Advanced Tire Pressure Monitoring System</li>
-                      <li>4-wheel Electronic Traction System (4-ETS)</li>
-                      <li>Rear side-impact air bags</li>
-                      <li>ATTENTION ASSIST</li>
-                    </ul>)}
+                      { mercedesFeatures2.map((feature, index) => (
+                       <li key={index}>{feature}</li>
+                     ))}
+                     </ul>
+                   )}
                   </div>
                   <div onClick={toggleFeatures} className='flex text-white justify-between mt-2 border rounded-md p-2 bg-[#8d2acf]'>
                     <button>

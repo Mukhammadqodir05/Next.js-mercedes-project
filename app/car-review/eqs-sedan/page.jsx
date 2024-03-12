@@ -51,6 +51,7 @@ import luxury4 from '/app/car-review/eqs-sedan/EQSimages/luxury/luxury4.webp'
 import accessories1 from '/app/car-review/eqs-sedan/EQSimages/accessories/accessory1.webp'
 import accessories2 from '/app/car-review/eqs-sedan/EQSimages/accessories/accessory2.webp'
 import accessories3 from '/app/car-review/eqs-sedan/EQSimages/accessories/accessory3.webp'
+import { EQSFeatures1, EQSFeatures2, EQSFeatures3 } from '@/app/utilities/cardata';
 
 
 const EQS_sedan = () => {
@@ -361,95 +362,11 @@ const EQS_sedan = () => {
                 <div>
                 {showFeatures2 && (
                  <ul className='list-disc ml-7'>
-                     <li>Multicontour front seats with massage</li>
-                     <li>Rapid-heating front seats</li>
-                     <li>Heated steering wheel</li>
-                     <li>Active ambient lighting</li>
-                     <li>Heated power front seats with memory</li>
-                     <li>Ventilated front seats</li>
-                     <li>Heated rear seats</li>
-                     <li>Panorama roof</li>
-                     <li>Dual-zone automatic climate control</li>
-                     <li>Pre-entry climate control</li>
-                     <li>Steering wheel with Touch Control Buttons</li>
-                     <li>AMG Performance steering wheel in Nappa leather</li>
-                     <li>AMG DRIVE UNIT</li>
-                     <li>MBUX Hyperscreen</li>
-                     <li>Mercedes-Benz User Experience (MBUX)</li>
-                     <li>“Hey, Mercedes” keyword activation</li>
-                     <li>Voice Control with Natural Language Understanding</li>
-                     <li>Biometric authentication</li>
-                     <li>12.3-inch digital instrument cluster</li>
-                     <li>12.3-inch OLED front passenger display</li>
-                     <li>MB Navigation with Electric Intelligence</li>
-                     <li>Route-based Speed Adaptation</li>
-                     <li>MBUX Augmented Video for Navigation</li>
-                     <li>No-charge online navigation map updates for 1 year</li>
-                     <li>Over-the-air software updates</li>
-                     <li>MBUX Augmented Reality AMG Head-Up Display</li>
-                     <li>Front-cabin wireless charging</li>
-                     <li>Burmester 3D Surround Sound system w/EV Sound</li>
-                     <li>SiriusXM 6-month Platinum Plan trial subscription</li>
-                     <li>HD Radio receiver</li>
-                     <li>Wireless Apple CarPlay</li>
-                     <li>Wireless Android Auto</li>
-                     <li>Online Music Streaming</li>
-                     <li>Bluetooth audio streaming</li>
-                     <li>Hands-free Bluetooth interface</li>
-                     <li>Six 100W USB-C charging ports</li>
-                     <li>AMG SOUND EXPERIENCE</li>
-                     <li>64-color LED ambient lighting</li>
-                     <li>Illuminated door sills</li>
-                     <li>LED logo projectors</li>
-                     <li>Power-folding side mirrors</li>
-                     <li>KEYLESS-GO with seamless door handles</li>
-                     <li>Electronic liftgate closer</li>
-                     <li>HANDS-FREE ACCESS</li>
-                     <li>Illuminated entry system</li>
-                     <li>Garage door opener</li>
-                     <li>Dual AMG-specific electric motors with boost function</li>
-                     <li>AMG Performance 4MATIC+ all-wheel drive</li>
-                     <li>Intelligent Energy Recovery with paddles</li>
-                     <li>AMG DYNAMIC SELECT</li>
-                     <li>AMG DRIVE UNIT</li>
-                     <li>AMG DYNAMIC PLUS Package</li>
-                     <li>Advanced 108.4-kWh EV battery</li>
-                     <li>Multiple charging options</li>
-                     <li>AMG RIDE CONTROL+ air suspension</li>
-                     <li>9-degree rear axle steering</li>
-                     <li>AMG high-performance compound brake system</li>
-                     <li>Car-to-X Communication</li>
-                     <li>PRE-SAFE</li>
-                     <li>PRE-SAFE Sound</li>
-                     <li>PRE-SAFE PLUS</li>
-                     <li>PRE-SAFE Impulse Side</li>
-                     <li>LED DIGITAL LIGHT headlamps w/lightband</li>
-                     <li>Adaptive Highbeam Assist</li>
-                     <li>ATTENTION ASSIST</li>
-                     <li>PARKTRONIC with Active Parking Assist</li>
-                     <li>Active Distance Assist DISTRONIC</li>
-                     <li>Evasive Steering Assist</li>
-                     <li>Active Brake Assist with Cross-Traffic Function</li>
-                     <li>Front and Rear Cross-Traffic Alert w/pedestrian detection and automatic braking</li>
-                     <li>Acoustic Vehicle Alert System</li>
-                     <li>Active Emergency Stop Assist</li>
-                     <li>Active Speed Limit Assist</li>
-                     <li>Active Lane Change Assist</li>
-                     <li>Extended Restart in Stop-and-Go Traffic</li>
-                     <li>Active Stop-and-Go Assist</li>
-                     <li>Adaptive braking technology</li>
-                     <li>7 air bags</li>
-                     <li>Antitheft alarm system</li>
-                     <li>GUARD 360° security system</li>
-                     <li>Active Brake</li>
-                     <li>Mercedes-Benz Emergency Call</li>
-                     <li>Surround View System</li>
-                     <li>Active Steering Assist</li>
-                     <li>Active Blind Spot Assist</li>
-                     <li>Exit Warning Assist</li>
-                     <li>Active Lane Keeping Assist</li>
-                     <li>SmartKey with KEYLESS-START</li>
-                  </ul>)}
+                   { EQSFeatures1.map((feature, index) => (
+                    <li key={index}>{feature}</li>
+                   ))}
+                  </ul>
+                 )}
                 </div>
                 <div onClick={toggleFeatures2} className='flex text-white justify-between mt-2 border rounded-md p-2 bg-[#8d2acf]'>
                     <button>
@@ -472,97 +389,12 @@ const EQS_sedan = () => {
                  </div>
                   <div>
                    {showFeatures && (
-                    <ul className='list-disc ml-7'>
-                     <li>Heated steering wheel</li>
-                     <li>Active ambient lighting</li>
-                     <li>Multicontour front seats with massage</li>
-                     <li>Rapid-heating front seats</li>
-                     <li>Heated power front seats with memory</li>
-                     <li>Ventilated front seats</li>
-                     <li>Heated rear seats</li>
-                     <li>Panorama roof</li>
-                     <li>Pre-entry climate control</li>
-                     <li>4-zone automatic climate control</li>
-                     <li>Steering wheel with Touch Control Buttons</li>
-                     <li>AMG Performance steering wheel in Nappa leather</li>
-                     <li>AMG DRIVE UNIT</li>
-                     <li>MBUX Hyperscreen</li>
-                     <li>Mercedes-Benz User Experience (MBUX)</li>
-                     <li>“Hey, Mercedes” keyword activation</li>
-                     <li>Voice Control with Natural Language Understanding</li>
-                     <li>Biometric authentication</li>
-                     <li>12.3-inch digital instrument cluster</li>
-                     <li>12.3-inch OLED front passenger display</li>
-                     <li>MB Navigation with Electric Intelligence</li>
-                     <li>Route-based Speed Adaptation</li>
-                     <li>MBUX Augmented Video for Navigation</li>
-                     <li>No-charge online navigation map updates for 1 year</li>
-                     <li>Over-the-air software updates</li>
-                     <li>MBUX Augmented Reality AMG Head-Up Display</li>
-                     <li>Front-cabin wireless charging</li>
-                     <li>Burmester 3D Surround Sound system w/EV Sound</li>
-                     <li>SiriusXM 6-month Platinum Plan trial subscription</li>
-                     <li>HD Radio receiver</li>
-                     <li>Wireless Apple CarPlay</li>
-                     <li>Wireless Android Auto</li>
-                     <li>Online Music Streaming</li>
-                     <li>Bluetooth audio streaming</li>
-                     <li>Hands-free Bluetooth interface</li>
-                     <li>Six 100W USB-C charging ports</li>
-                     <li>AMG SOUND EXPERIENCE</li>
-                     <li>64-color LED ambient lighting</li>
-                     <li>Illuminated door sills</li>
-                     <li>LED logo projectors</li>
-                     <li>Power-folding side mirrors</li>
-                     <li>KEYLESS-GO with seamless door handles</li>
-                     <li>Electronic liftgate closer</li>
-                     <li>HANDS-FREE ACCESS</li>
-                     <li>Illuminated entry system</li>
-                     <li>Garage door opener</li>
-                     <li>Dual AMG-specific electric motors with boost function</li>
-                     <li>AMG Performance 4MATIC+ all-wheel drive</li>
-                     <li>Intelligent Energy Recovery with paddles</li>
-                     <li>AMG DYNAMIC SELECT</li>
-                     <li>AMG DRIVE UNIT</li>
-                     <li>AMG DYNAMIC PLUS Package</li>
-                     <li>Advanced 108.4-kWh EV battery</li>
-                     <li>Multiple charging options</li>
-                     <li>AMG RIDE CONTROL+ air suspension</li>
-                     <li>9-degree rear axle steering</li>
-                     <li>AMG high-performance compound brake system</li>
-                     <li>Car-to-X Communication</li>
-                     <li>PRE-SAFE</li>
-                     <li>PRE-SAFE Sound</li>
-                     <li>PRE-SAFE PLUS</li>
-                     <li>PRE-SAFE Impulse Side</li>
-                     <li>LED DIGITAL LIGHT headlamps w/lightband</li>
-                     <li>Adaptive Highbeam Assist</li>
-                     <li>ATTENTION ASSIST</li>
-                     <li>Active Brake Assist</li>
-                     <li>Mercedes-Benz Emergency Call</li>
-                     <li>Surround View System</li>
-                     <li>PARKTRONIC with Active Parking Assist</li>
-                     <li>Active Distance Assist DISTRONIC</li>
-                     <li>Active Steering Assist</li>
-                     <li>Evasive Steering Assist</li>
-                     <li>Active Brake Assist with Cross-Traffic Function</li>
-                     <li>Front and Rear Cross-Traffic Alert w/pedestrian detection and automatic braking</li>
-                     <li>Acoustic Vehicle Alert System</li>
-                     <li>Active Emergency Stop Assist</li>
-                     <li>Active Speed Limit Assist</li>
-                     <li>Active Blind Spot Assist</li>
-                     <li>Exit Warning Assist</li>
-                     <li>Active Lane Keeping Assist</li>
-                     <li>Active Lane Change Assist</li>
-                     <li>Extended Restart in Stop-and-Go Traffic</li>
-                     <li>Active Stop-and-Go Assist</li>
-                     <li>Adaptive braking technology</li>
-                     <li>7 air bags</li>
-                     <li>Rear side-impact air bags</li>
-                     <li>Antitheft alarm system</li>
-                     <li>GUARD 360° security system</li>
-                     <li>SmartKey with KEYLESS-START</li>
-                   </ul>)}
+                     <ul className='list-disc ml-7'>
+                        {EQSFeatures2.map((feature, index) => (
+                          <li key={index}>{feature}</li>
+                        ))}
+                      </ul>
+                   )}
                   </div>
                   <div onClick={toggleFeatures} className='flex lg:mt-[93px]  text-white justify-between mt-2 border rounded-md p-2 bg-[#8d2acf]'>
                     <button>
@@ -585,103 +417,13 @@ const EQS_sedan = () => {
                </div>
                 <div>
                 {showFeatures3 && (
-                <ul className='list-disc ml-7'>
-                  <li>Heated front seats</li>
-                  <li>Multicontour front seats with massage</li>
-                  <li>Rapid-heating front seats</li>
-                  <li>Active ambient lighting</li>
-                  <li>Heated steering wheel</li>
-                  <li>Heated power front seats with memory</li>
-                  <li>Ventilated front seats</li>
-                  <li>Heated and ventilated rear seats</li>
-                  <li>Power outboard rear seats</li>
-                  <li>Luxury rear head restraints</li>
-                  <li>Panorama roof</li>
-                  <li>Pre-entry climate control</li>
-                  <li>4-zone automatic climate control</li>
-                  <li>Steering wheel with Touch Control Buttons</li>
-                  <li>AMG Performance steering wheel in Nappa leather</li>
-                  <li>AMG DRIVE UNIT</li>
-                  <li>MBUX Hyperscreen</li>
-                  <li>Mercedes-Benz User Experience (MBUX)</li>
-                  <li>“Hey, Mercedes” keyword activation</li>
-                  <li>Voice Control with Natural Language Understanding</li>
-                  <li>Biometric authentication</li>
-                  <li>12.3-inch digital instrument cluster</li>
-                  <li>12.3-inch OLED front passenger display</li>
-                  <li>MB Navigation with Electric Intelligence</li>
-                  <li>Route-based Speed Adaptation</li>
-                  <li>MBUX Augmented Video for Navigation</li>
-                  <li>No-charge online navigation map updates for 1 year</li>
-                  <li>Rear-cabin wireless charging</li>
-                  <li>Burmester 3D Surround Sound system w/EV Sound</li>
-                  <li>SiriusXM 6-month Platinum Plan trial subscription</li>
-                  <li>HD Radio receiver</li>
-                  <li>Wireless Apple CarPlay</li>
-                  <li>Wireless Android Auto</li>
-                  <li>Online Music Streaming</li>
-                  <li>Bluetooth audio streaming</li>
-                  <li>Hands-free Bluetooth interface</li>
-                  <li>Six 100W USB-C charging ports</li>
-                  <li>Over-the-air software updates</li>
-                  <li>64-color LED ambient lighting</li>
-                  <li>Illuminated door sills</li>
-                  <li>LED logo projectors</li>
-                  <li>Power-folding side mirrors</li>
-                  <li>KEYLESS-GO with seamless door handles</li>
-                  <li>Electronic liftgate closer</li>
-                  <li>HANDS-FREE ACCESS</li>
-                  <li>MBUX Augmented Reality AMG Head-Up Display</li>
-                  <li>Front-cabin wireless charging</li>
-                  <li>AMG SOUND EXPERIENCE</li>
-                  <li>Comfort-type rear center armrest</li>
-                  <li>Illuminated entry system</li>
-                  <li>Garage door opener</li>
-                  <li>Dual AMG-specific electric motors with boost function</li>
-                  <li>Advanced 108.4-kWh EV battery</li>
-                  <li>AMG RIDE CONTROL+ air suspension</li>
-                  <li>9-degree rear axle steering</li>
-                  <li>AMG high-performance compound brake system</li>
-                  <li>Car-to-X Communication</li>
-                  <li>PRE-SAFE</li>
-                  <li>PRE-SAFE Sound</li>
-                  <li>PRE-SAFE PLUS</li>
-                  <li>PRE-SAFE Impulse Side</li>
-                  <li>LED DIGITAL LIGHT headlamps w/lightband</li>
-                  <li>Adaptive Highbeam Assist</li>
-                  <li>ATTENTION ASSIST</li>
-                  <li>Mercedes-Benz Emergency Call</li>
-                  <li>Active Brake Assist</li>
-                  <li>Exit Warning Assist</li>
-                  <li>PARKTRONIC with Active Parking Assist</li>
-                  <li>Active Distance Assist DISTRONIC</li>
-                  <li>Surround View System</li>
-                  <li>Evasive Steering Assist</li>
-                  <li>Active Brake Assist with Cross-Traffic Function</li>
-                  <li>Front and Rear Cross-Traffic Alert w/pedestrian detection and automatic braking</li>
-                  <li>Acoustic Vehicle Alert System</li>
-                  <li>Active Emergency Stop Assist</li>
-                  <li>Active Speed Limit Assist</li>
-                  <li>Active Steering Assist</li>
-                  <li>Active Blind Spot Assist</li>
-                  <li>Active Lane Keeping Assist</li>
-                  <li>Active Lane Change Assist</li>
-                  <li>Extended Restart in Stop-and-Go Traffic</li>
-                  <li>Active Stop-and-Go Assist</li>
-                  <li>Adaptive braking technology</li>
-                  <li>7 air bags</li>
-                  <li>Rear side-impact air bags</li>
-                  <li>SmartKey with KEYLESS-START</li>
-                  <li>AMG Performance 4MATIC+ all-wheel drive</li>
-                  <li>Intelligent Energy Recovery with paddles</li>
-                  <li>AMG DYNAMIC SELECT</li>
-                  <li>AMG DRIVE UNIT</li>
-                  <li>AMG DYNAMIC PLUS Package</li>
-                  <li>Advanced 108.4-kWh EV battery</li>
-                  <li>Multiple charging options</li>
-                  <li>Antitheft alarm system</li>
-                  <li>GUARD 360° security system</li>
-                  </ul>)}
+                  <ul className='list-disc ml-7'>
+                  {EQSFeatures3.map((feature, index) => (
+                    <li key={index}>{feature}</li>
+                  ))}
+                </ul>
+
+                  )}
                 </div>
                 <div onClick={toggleFeatures3} className='flex text-white justify-between lg:mt-[37px] mt-2 border rounded-md p-2 bg-[#8d2acf]'>
                     <button>

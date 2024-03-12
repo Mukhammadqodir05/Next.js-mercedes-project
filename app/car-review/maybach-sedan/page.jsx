@@ -54,6 +54,7 @@ import accessory1 from '/app/car-review/maybach-sedan/maybachImages/accesssories
 import accessory2 from '/app/car-review/maybach-sedan/maybachImages/accesssories/accessory2.webp'
 import accessory3 from '/app/car-review/maybach-sedan/maybachImages/accesssories/accessory3.webp'
 import accessory4 from '/app/car-review/maybach-sedan/maybachImages/accesssories/accessory4.webp'
+import { maybachFeatures1, maybachFeatures2, maybachFeatures3, mercedesFeatures } from '@/app/utilities/cardata';
 
 
 const Maybach_SClass = () => {
@@ -172,197 +173,196 @@ const Maybach_SClass = () => {
                 </div>
               </div>
          
-       <div className='flex flex-col justify-center items-center space-y-4 w-full mt-20 max-w-[1200px]'>
-          <h1 className='text-2xl'> Essential Characteristics✔️</h1>
-       {/* Performance */}
-          <div className='flex flex-col space-y-5 w-full mt-10 max-w-[1200px]' onClick={togglePerformanceImages}>
-            <div className='border-b w-full border-black'></div>     
-            <div className='flex justify-between '>
-              <h1 className=' font-serif'>Performance</h1>
-              <button className='text-cyan-500 text-xl font-medium'>
-                {showPerformanceImages ? <BsChevronUp  /> : <BsChevronDown/>}
-              </button>
-            </div>
-            {showPerformanceImages && (
-              <div className='grid gap-5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]'>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={performance1} placeholder='blur' blurDataURL='/app/car-review/maybach-sedan/maybachImages/performance/performance1.png' alt="" />
-                    <h1 className='text-center font-bold'>Handcrafted AMG 2.0L inline-4 turbo with hybrid assist</h1>
+          <div className='flex flex-col justify-center items-center space-y-4 w-full mt-20 max-w-[1200px]'>
+              <h1 className='text-2xl'> Essential Characteristics✔️</h1>
+          {/* Performance */}
+              <div className='flex flex-col space-y-5 w-full mt-10 max-w-[1200px]' onClick={togglePerformanceImages}>
+                <div className='border-b w-full border-black'></div>     
+                <div className='flex justify-between '>
+                  <h1 className=' font-serif'>Performance</h1>
+                  <button className='text-cyan-500 text-xl font-medium'>
+                    {showPerformanceImages ? <BsChevronUp  /> : <BsChevronDown/>}
+                  </button>
                 </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={performance2} placeholder='blur' blurDataURL='/app/car-review/maybach-sedan/maybachImages/performance/performance2.png' alt="" />
-                    <h1 className='text-center font-bold'>Electric exhaust-gas turbocharger</h1>
-                </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={performance3} placeholder='blur' blurDataURL='/app/car-review/maybach-sedan/maybachImages/performance/performance3.png' alt="" />
-                    <h1 className='text-center font-bold'>9G-TRONIC automatic transmission</h1>
-                </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={performance4} placeholder='blur' blurDataURL='/app/car-review/maybach-sedan/maybachImages/performance/performance4.png' alt="" />
-                    <h1 className='text-center font-bold'>Two-stage direct injection</h1>
-                </div>
+                {showPerformanceImages && (
+                  <div className='grid gap-5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]'>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={performance1} placeholder='blur' blurDataURL='/app/car-review/maybach-sedan/maybachImages/performance/performance1.png' alt="" />
+                        <h1 className='text-center font-bold'>Handcrafted AMG 2.0L inline-4 turbo with hybrid assist</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={performance2} placeholder='blur' blurDataURL='/app/car-review/maybach-sedan/maybachImages/performance/performance2.png' alt="" />
+                        <h1 className='text-center font-bold'>Electric exhaust-gas turbocharger</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={performance3} placeholder='blur' blurDataURL='/app/car-review/maybach-sedan/maybachImages/performance/performance3.png' alt="" />
+                        <h1 className='text-center font-bold'>9G-TRONIC automatic transmission</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={performance4} placeholder='blur' blurDataURL='/app/car-review/maybach-sedan/maybachImages/performance/performance4.png' alt="" />
+                        <h1 className='text-center font-bold'>Two-stage direct injection</h1>
+                    </div>
+                  </div>
+                )}
+                <div className='border-b w-full border-black'></div>
               </div>
-            )}
-            <div className='border-b w-full border-black'></div>
-          </div>
 
-     {/* Design */}
-          <div className='flex flex-col space-y-5 w-full mt-10 max-w-[1200px]' onClick={toggleDesignImages}>
-            <div className='flex justify-between '>
-              <h1 className=' font-serif'>Design</h1>
-              <button className='text-cyan-500 text-xl font-medium'>
-                {showDesignImages ? <BsChevronUp  /> : <BsChevronDown/>}
-              </button>
-            </div>
-            {showDesignImages && (
-              <div className='grid gap-5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]'>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={design1} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>Aggressively athletic aesthetics</h1>
+        {/* Design */}
+              <div className='flex flex-col space-y-5 w-full mt-10 max-w-[1200px]' onClick={toggleDesignImages}>
+                <div className='flex justify-between '>
+                  <h1 className=' font-serif'>Design</h1>
+                  <button className='text-cyan-500 text-xl font-medium'>
+                    {showDesignImages ? <BsChevronUp  /> : <BsChevronDown/>}
+                  </button>
                 </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={design2} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>Technology with a human touch</h1>
-                </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={design3} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>AMG interior with sport front seats</h1>
-                </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={design4} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>Brushed stainless steel pedals</h1>
-                </div>
+                {showDesignImages && (
+                  <div className='grid gap-5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]'>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={design1} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>Aggressively athletic aesthetics</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={design2} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>Technology with a human touch</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={design3} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>AMG interior with sport front seats</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={design4} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>Brushed stainless steel pedals</h1>
+                    </div>
+                  </div>
+                )}
+                <div className='border-b w-full border-black'></div>
               </div>
-            )}
-            <div className='border-b w-full border-black'></div>
-          </div>
-  
-    {/* Luxury */}
-          <div className='flex flex-col space-y-5 w-full mt-10 max-w-[1200px]' onClick={toggleLuxuryImages}>
-            <div className='flex justify-between '>
-              <h1 className=' font-serif'>Luxury</h1>
-              <button className='text-cyan-500 text-xl font-medium'>
-                {showLuxuryImages ? <BsChevronUp  /> : <BsChevronDown/>}
-              </button>
-            </div>
-            {showLuxuryImages && (
-              <div className='grid gap-5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]'>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={luxury1} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>Power front seats with memory</h1>
+      
+        {/* Luxury */}
+              <div className='flex flex-col space-y-5 w-full mt-10 max-w-[1200px]' onClick={toggleLuxuryImages}>
+                <div className='flex justify-between '>
+                  <h1 className=' font-serif'>Luxury</h1>
+                  <button className='text-cyan-500 text-xl font-medium'>
+                    {showLuxuryImages ? <BsChevronUp  /> : <BsChevronDown/>}
+                  </button>
                 </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={luxury2} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>Heated front seats</h1>
-                </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={luxury3} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>40/20/40-split folding rear seats</h1>
-                </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={luxury4} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>1 year of Mercedes me connect services</h1>
-                </div>
+                {showLuxuryImages && (
+                  <div className='grid gap-5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]'>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={luxury1} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>Power front seats with memory</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={luxury2} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>Heated front seats</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={luxury3} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>40/20/40-split folding rear seats</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={luxury4} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>1 year of Mercedes me connect services</h1>
+                    </div>
+                  </div>
+                )}
+                <div className='border-b w-full border-black'></div>
               </div>
-            )}
-            <div className='border-b w-full border-black'></div>
-          </div>
 
-       {/* Multimedia */}
-          <div className='flex flex-col space-y-5 w-full mt-10 max-w-[1200px]' onClick={toggleMultimediaImages}>
-            <div className='flex justify-between '>
-              <h1 className='font-serif'>Multimedia</h1>
-              <button className='text-cyan-500 text-xl font-medium'>
-                {showMultimediaImages ? <BsChevronUp  /> : <BsChevronDown/>}
-              </button>
-            </div>
-            {showMultimediaImages && (
-              <div className='grid gap-5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]'>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={multimedia1} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>Mercedes-Benz User Experience (MBUX)</h1>
+          {/* Multimedia */}
+              <div className='flex flex-col space-y-5 w-full mt-10 max-w-[1200px]' onClick={toggleMultimediaImages}>
+                <div className='flex justify-between '>
+                  <h1 className='font-serif'>Multimedia</h1>
+                  <button className='text-cyan-500 text-xl font-medium'>
+                    {showMultimediaImages ? <BsChevronUp  /> : <BsChevronDown/>}
+                  </button>
                 </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={multimedia2} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>12.3-inch digital instrument cluster</h1>
-                </div>
-                <div className='space-y-2'>
-                    <Image g className='rounded-md' src={multimedia3} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>11.9-inch touchscreen central multimedia display</h1>
-                </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={multimedia4} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>Steering wheel with Touch Control Buttons</h1>
-                </div>
+                {showMultimediaImages && (
+                  <div className='grid gap-5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]'>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={multimedia1} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>Mercedes-Benz User Experience (MBUX)</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={multimedia2} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>12.3-inch digital instrument cluster</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image g className='rounded-md' src={multimedia3} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>11.9-inch touchscreen central multimedia display</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={multimedia4} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>Steering wheel with Touch Control Buttons</h1>
+                    </div>
+                  </div>
+                )}
+                <div className='border-b w-full border-black'></div>
               </div>
-            )}
-            <div className='border-b w-full border-black'></div>
-          </div>
 
-     {/* Safety */}
-          <div className='flex flex-col space-y-5 w-full mt-10 max-w-[1200px]' onClick={toggleSafetyImages}>
-            <div className='flex justify-between '>
-              <h1 className=' font-serif'>Safety</h1>
-              <button className='text-cyan-500 text-xl font-medium'>
-                {showSafetyImages ? <BsChevronUp  /> : <BsChevronDown/>}
-              </button>
-            </div>
-            {showSafetyImages && (
-              <div className='grid gap-5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]'>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={safety1} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>PRE-SAFE</h1>
+        {/* Safety */}
+              <div className='flex flex-col space-y-5 w-full mt-10 max-w-[1200px]' onClick={toggleSafetyImages}>
+                <div className='flex justify-between '>
+                  <h1 className=' font-serif'>Safety</h1>
+                  <button className='text-cyan-500 text-xl font-medium'>
+                    {showSafetyImages ? <BsChevronUp  /> : <BsChevronDown/>}
+                  </button>
                 </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={safety2} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>PRE-SAFE Sound</h1>
-                </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={safety3} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>ATTENTION ASSIST</h1>
-                </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={safety4} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>Active Brake Assist</h1>
-                </div>
+                {showSafetyImages && (
+                  <div className='grid gap-5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]'>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={safety1} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>PRE-SAFE</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={safety2} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>PRE-SAFE Sound</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={safety3} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>ATTENTION ASSIST</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={safety4} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>Active Brake Assist</h1>
+                    </div>
+                  </div>
+                )}
+                <div className='border-b w-full border-black'></div>
               </div>
-            )}
-            <div className='border-b w-full border-black'></div>
-          </div>
-          
-    {/* Accessories */}
-          <div className='flex flex-col space-y-5 w-full mt-10 max-w-[1200px]' onClick={toggleAccessoriesImages}>
-            <div className='flex justify-between '>
-              <h1 className=' font-serif'>Accessories</h1>
-              <button className='text-cyan-500 text-xl font-medium'>
-                {showAccessoriesImages ? <BsChevronUp  /> : <BsChevronDown/>}
-              </button>
-            </div>
-            {showAccessoriesImages && (
-              <div className='grid gap-5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]'>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={accessory1} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>Wheel locking bolts</h1>
+              
+        {/* Accessories */}
+              <div className='flex flex-col space-y-5 w-full mt-10 max-w-[1200px]' onClick={toggleAccessoriesImages}>
+                <div className='flex justify-between '>
+                  <h1 className=' font-serif'>Accessories</h1>
+                  <button className='text-cyan-500 text-xl font-medium'>
+                    {showAccessoriesImages ? <BsChevronUp  /> : <BsChevronDown/>}
+                  </button>
                 </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={accessory2} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>Chrome door handle inserts</h1>
-                </div>
-                <div className='space-y-2'>
-                <Image className='rounded-md' src={accessory3} placeholder='blur' alt="" />
-                <h1 className='text-center font-bold'>First-aid kit</h1>
-                </div>
-                <div className='space-y-2'>
-                    <Image className='rounded-md' src={accessory4} placeholder='blur' alt="" />
-                    <h1 className='text-center font-bold'>All-season front and rear floor mats, black rubber</h1>
-                </div>
+                {showAccessoriesImages && (
+                  <div className='grid gap-5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]'>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={accessory1} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>Wheel locking bolts</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={accessory2} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>Chrome door handle inserts</h1>
+                    </div>
+                    <div className='space-y-2'>
+                    <Image className='rounded-md' src={accessory3} placeholder='blur' alt="" />
+                    <h1 className='text-center font-bold'>First-aid kit</h1>
+                    </div>
+                    <div className='space-y-2'>
+                        <Image className='rounded-md' src={accessory4} placeholder='blur' alt="" />
+                        <h1 className='text-center font-bold'>All-season front and rear floor mats, black rubber</h1>
+                    </div>
+                  </div>
+                )}
+                <div className='border-b w-full border-black'></div>
               </div>
-            )}
-            <div className='border-b w-full border-black'></div>
-          </div>
 
-        </div>
-
+            </div>
         
            <div className='mt-10 flex flex-col max-w-[1200px]'>
            <h1 className='text-2xl text-center font-medium'>Option Packages</h1>
@@ -378,96 +378,12 @@ const Maybach_SClass = () => {
                </div>
                 <div>
                 {showFeatures2 && (
-                 <ul className='list-disc ml-7'>
-                     <li>Multicontour front seats with massage</li>
-                     <li>Rapid-heating front seats</li>
-                     <li>Heated steering wheel</li>
-                     <li>Active ambient lighting</li>
-                     <li>Heated power front seats with memory</li>
-                     <li>Ventilated front seats</li>
-                     <li>Heated rear seats</li>
-                     <li>Panorama roof</li>
-                     <li>Dual-zone automatic climate control</li>
-                     <li>Pre-entry climate control</li>
-                     <li>Steering wheel with Touch Control Buttons</li>
-                     <li>AMG Performance steering wheel in Nappa leather</li>
-                     <li>AMG DRIVE UNIT</li>
-                     <li>MBUX Hyperscreen</li>
-                     <li>Mercedes-Benz User Experience (MBUX)</li>
-                     <li>“Hey, Mercedes” keyword activation</li>
-                     <li>Voice Control with Natural Language Understanding</li>
-                     <li>Biometric authentication</li>
-                     <li>12.3-inch digital instrument cluster</li>
-                     <li>12.3-inch OLED front passenger display</li>
-                     <li>MB Navigation with Electric Intelligence</li>
-                     <li>Route-based Speed Adaptation</li>
-                     <li>MBUX Augmented Video for Navigation</li>
-                     <li>No-charge online navigation map updates for 1 year</li>
-                     <li>Over-the-air software updates</li>
-                     <li>MBUX Augmented Reality AMG Head-Up Display</li>
-                     <li>Front-cabin wireless charging</li>
-                     <li>Burmester 3D Surround Sound system w/EV Sound</li>
-                     <li>SiriusXM 6-month Platinum Plan trial subscription</li>
-                     <li>HD Radio receiver</li>
-                     <li>Wireless Apple CarPlay</li>
-                     <li>Wireless Android Auto</li>
-                     <li>Online Music Streaming</li>
-                     <li>Bluetooth audio streaming</li>
-                     <li>Hands-free Bluetooth interface</li>
-                     <li>Six 100W USB-C charging ports</li>
-                     <li>AMG SOUND EXPERIENCE</li>
-                     <li>64-color LED ambient lighting</li>
-                     <li>Illuminated door sills</li>
-                     <li>LED logo projectors</li>
-                     <li>Power-folding side mirrors</li>
-                     <li>KEYLESS-GO with seamless door handles</li>
-                     <li>Electronic liftgate closer</li>
-                     <li>HANDS-FREE ACCESS</li>
-                     <li>Illuminated entry system</li>
-                     <li>Garage door opener</li>
-                     <li>Dual AMG-specific electric motors with boost function</li>
-                     <li>AMG Performance 4MATIC+ all-wheel drive</li>
-                     <li>Intelligent Energy Recovery with paddles</li>
-                     <li>AMG DYNAMIC SELECT</li>
-                     <li>AMG DRIVE UNIT</li>
-                     <li>AMG DYNAMIC PLUS Package</li>
-                     <li>Advanced 108.4-kWh EV battery</li>
-                     <li>Multiple charging options</li>
-                     <li>AMG RIDE CONTROL+ air suspension</li>
-                     <li>9-degree rear axle steering</li>
-                     <li>AMG high-performance compound brake system</li>
-                     <li>Car-to-X Communication</li>
-                     <li>PRE-SAFE</li>
-                     <li>PRE-SAFE Sound</li>
-                     <li>PRE-SAFE PLUS</li>
-                     <li>PRE-SAFE Impulse Side</li>
-                     <li>LED DIGITAL LIGHT headlamps w/lightband</li>
-                     <li>Adaptive Highbeam Assist</li>
-                     <li>ATTENTION ASSIST</li>
-                     <li>PARKTRONIC with Active Parking Assist</li>
-                     <li>Active Distance Assist DISTRONIC</li>
-                     <li>Evasive Steering Assist</li>
-                     <li>Active Brake Assist with Cross-Traffic Function</li>
-                     <li>Front and Rear Cross-Traffic Alert w/pedestrian detection and automatic braking</li>
-                     <li>Acoustic Vehicle Alert System</li>
-                     <li>Active Emergency Stop Assist</li>
-                     <li>Active Speed Limit Assist</li>
-                     <li>Active Lane Change Assist</li>
-                     <li>Extended Restart in Stop-and-Go Traffic</li>
-                     <li>Active Stop-and-Go Assist</li>
-                     <li>Adaptive braking technology</li>
-                     <li>7 air bags</li>
-                     <li>Antitheft alarm system</li>
-                     <li>GUARD 360° security system</li>
-                     <li>Active Brake</li>
-                     <li>Mercedes-Benz Emergency Call</li>
-                     <li>Surround View System</li>
-                     <li>Active Steering Assist</li>
-                     <li>Active Blind Spot Assist</li>
-                     <li>Exit Warning Assist</li>
-                     <li>Active Lane Keeping Assist</li>
-                     <li>SmartKey with KEYLESS-START</li>
-                  </ul>)}
+                    <ul className='list-disc ml-7'>
+                      {maybachFeatures1.map((feature, index) => (
+                      <li key={index}>{feature}</li>
+                      ))}
+                  </ul>
+                  )}
                 </div>
                 <div onClick={toggleFeatures2} className='flex text-white justify-between mt-2 border rounded-md p-2 bg-[#8d2acf]'>
                     <button>
@@ -490,97 +406,12 @@ const Maybach_SClass = () => {
                  </div>
                   <div>
                    {showFeatures && (
-                    <ul className='list-disc ml-7'>
-                     <li>Heated steering wheel</li>
-                     <li>Active ambient lighting</li>
-                     <li>Multicontour front seats with massage</li>
-                     <li>Rapid-heating front seats</li>
-                     <li>Heated power front seats with memory</li>
-                     <li>Ventilated front seats</li>
-                     <li>Heated rear seats</li>
-                     <li>Panorama roof</li>
-                     <li>Pre-entry climate control</li>
-                     <li>4-zone automatic climate control</li>
-                     <li>Steering wheel with Touch Control Buttons</li>
-                     <li>AMG Performance steering wheel in Nappa leather</li>
-                     <li>AMG DRIVE UNIT</li>
-                     <li>MBUX Hyperscreen</li>
-                     <li>Mercedes-Benz User Experience (MBUX)</li>
-                     <li>“Hey, Mercedes” keyword activation</li>
-                     <li>Voice Control with Natural Language Understanding</li>
-                     <li>Biometric authentication</li>
-                     <li>12.3-inch digital instrument cluster</li>
-                     <li>12.3-inch OLED front passenger display</li>
-                     <li>MB Navigation with Electric Intelligence</li>
-                     <li>Route-based Speed Adaptation</li>
-                     <li>MBUX Augmented Video for Navigation</li>
-                     <li>No-charge online navigation map updates for 1 year</li>
-                     <li>Over-the-air software updates</li>
-                     <li>MBUX Augmented Reality AMG Head-Up Display</li>
-                     <li>Front-cabin wireless charging</li>
-                     <li>Burmester 3D Surround Sound system w/EV Sound</li>
-                     <li>SiriusXM 6-month Platinum Plan trial subscription</li>
-                     <li>HD Radio receiver</li>
-                     <li>Wireless Apple CarPlay</li>
-                     <li>Wireless Android Auto</li>
-                     <li>Online Music Streaming</li>
-                     <li>Bluetooth audio streaming</li>
-                     <li>Hands-free Bluetooth interface</li>
-                     <li>Six 100W USB-C charging ports</li>
-                     <li>AMG SOUND EXPERIENCE</li>
-                     <li>64-color LED ambient lighting</li>
-                     <li>Illuminated door sills</li>
-                     <li>LED logo projectors</li>
-                     <li>Power-folding side mirrors</li>
-                     <li>KEYLESS-GO with seamless door handles</li>
-                     <li>Electronic liftgate closer</li>
-                     <li>HANDS-FREE ACCESS</li>
-                     <li>Illuminated entry system</li>
-                     <li>Garage door opener</li>
-                     <li>Dual AMG-specific electric motors with boost function</li>
-                     <li>AMG Performance 4MATIC+ all-wheel drive</li>
-                     <li>Intelligent Energy Recovery with paddles</li>
-                     <li>AMG DYNAMIC SELECT</li>
-                     <li>AMG DRIVE UNIT</li>
-                     <li>AMG DYNAMIC PLUS Package</li>
-                     <li>Advanced 108.4-kWh EV battery</li>
-                     <li>Multiple charging options</li>
-                     <li>AMG RIDE CONTROL+ air suspension</li>
-                     <li>9-degree rear axle steering</li>
-                     <li>AMG high-performance compound brake system</li>
-                     <li>Car-to-X Communication</li>
-                     <li>PRE-SAFE</li>
-                     <li>PRE-SAFE Sound</li>
-                     <li>PRE-SAFE PLUS</li>
-                     <li>PRE-SAFE Impulse Side</li>
-                     <li>LED DIGITAL LIGHT headlamps w/lightband</li>
-                     <li>Adaptive Highbeam Assist</li>
-                     <li>ATTENTION ASSIST</li>
-                     <li>Active Brake Assist</li>
-                     <li>Mercedes-Benz Emergency Call</li>
-                     <li>Surround View System</li>
-                     <li>PARKTRONIC with Active Parking Assist</li>
-                     <li>Active Distance Assist DISTRONIC</li>
-                     <li>Active Steering Assist</li>
-                     <li>Evasive Steering Assist</li>
-                     <li>Active Brake Assist with Cross-Traffic Function</li>
-                     <li>Front and Rear Cross-Traffic Alert w/pedestrian detection and automatic braking</li>
-                     <li>Acoustic Vehicle Alert System</li>
-                     <li>Active Emergency Stop Assist</li>
-                     <li>Active Speed Limit Assist</li>
-                     <li>Active Blind Spot Assist</li>
-                     <li>Exit Warning Assist</li>
-                     <li>Active Lane Keeping Assist</li>
-                     <li>Active Lane Change Assist</li>
-                     <li>Extended Restart in Stop-and-Go Traffic</li>
-                     <li>Active Stop-and-Go Assist</li>
-                     <li>Adaptive braking technology</li>
-                     <li>7 air bags</li>
-                     <li>Rear side-impact air bags</li>
-                     <li>Antitheft alarm system</li>
-                     <li>GUARD 360° security system</li>
-                     <li>SmartKey with KEYLESS-START</li>
-                   </ul>)}
+                     <ul className='list-disc ml-7'>
+                        {maybachFeatures2.map((feature, index) => (
+                        <li key={index}>{feature}</li>
+                        ))}
+                     </ul>
+                   )}
                   </div>
                   <div onClick={toggleFeatures} className='flex lg:mt-[93px]  text-white justify-between mt-2 border rounded-md p-2 bg-[#8d2acf]'>
                     <button>
@@ -603,103 +434,12 @@ const Maybach_SClass = () => {
                </div>
                 <div>
                 {showFeatures3 && (
-                <ul className='list-disc ml-7'>
-                  <li>Heated front seats</li>
-                  <li>Multicontour front seats with massage</li>
-                  <li>Rapid-heating front seats</li>
-                  <li>Active ambient lighting</li>
-                  <li>Heated steering wheel</li>
-                  <li>Heated power front seats with memory</li>
-                  <li>Ventilated front seats</li>
-                  <li>Heated and ventilated rear seats</li>
-                  <li>Power outboard rear seats</li>
-                  <li>Luxury rear head restraints</li>
-                  <li>Panorama roof</li>
-                  <li>Pre-entry climate control</li>
-                  <li>4-zone automatic climate control</li>
-                  <li>Steering wheel with Touch Control Buttons</li>
-                  <li>AMG Performance steering wheel in Nappa leather</li>
-                  <li>AMG DRIVE UNIT</li>
-                  <li>MBUX Hyperscreen</li>
-                  <li>Mercedes-Benz User Experience (MBUX)</li>
-                  <li>“Hey, Mercedes” keyword activation</li>
-                  <li>Voice Control with Natural Language Understanding</li>
-                  <li>Biometric authentication</li>
-                  <li>12.3-inch digital instrument cluster</li>
-                  <li>12.3-inch OLED front passenger display</li>
-                  <li>MB Navigation with Electric Intelligence</li>
-                  <li>Route-based Speed Adaptation</li>
-                  <li>MBUX Augmented Video for Navigation</li>
-                  <li>No-charge online navigation map updates for 1 year</li>
-                  <li>Rear-cabin wireless charging</li>
-                  <li>Burmester 3D Surround Sound system w/EV Sound</li>
-                  <li>SiriusXM 6-month Platinum Plan trial subscription</li>
-                  <li>HD Radio receiver</li>
-                  <li>Wireless Apple CarPlay</li>
-                  <li>Wireless Android Auto</li>
-                  <li>Online Music Streaming</li>
-                  <li>Bluetooth audio streaming</li>
-                  <li>Hands-free Bluetooth interface</li>
-                  <li>Six 100W USB-C charging ports</li>
-                  <li>Over-the-air software updates</li>
-                  <li>64-color LED ambient lighting</li>
-                  <li>Illuminated door sills</li>
-                  <li>LED logo projectors</li>
-                  <li>Power-folding side mirrors</li>
-                  <li>KEYLESS-GO with seamless door handles</li>
-                  <li>Electronic liftgate closer</li>
-                  <li>HANDS-FREE ACCESS</li>
-                  <li>MBUX Augmented Reality AMG Head-Up Display</li>
-                  <li>Front-cabin wireless charging</li>
-                  <li>AMG SOUND EXPERIENCE</li>
-                  <li>Comfort-type rear center armrest</li>
-                  <li>Illuminated entry system</li>
-                  <li>Garage door opener</li>
-                  <li>Dual AMG-specific electric motors with boost function</li>
-                  <li>Advanced 108.4-kWh EV battery</li>
-                  <li>AMG RIDE CONTROL+ air suspension</li>
-                  <li>9-degree rear axle steering</li>
-                  <li>AMG high-performance compound brake system</li>
-                  <li>Car-to-X Communication</li>
-                  <li>PRE-SAFE</li>
-                  <li>PRE-SAFE Sound</li>
-                  <li>PRE-SAFE PLUS</li>
-                  <li>PRE-SAFE Impulse Side</li>
-                  <li>LED DIGITAL LIGHT headlamps w/lightband</li>
-                  <li>Adaptive Highbeam Assist</li>
-                  <li>ATTENTION ASSIST</li>
-                  <li>Mercedes-Benz Emergency Call</li>
-                  <li>Active Brake Assist</li>
-                  <li>Exit Warning Assist</li>
-                  <li>PARKTRONIC with Active Parking Assist</li>
-                  <li>Active Distance Assist DISTRONIC</li>
-                  <li>Surround View System</li>
-                  <li>Evasive Steering Assist</li>
-                  <li>Active Brake Assist with Cross-Traffic Function</li>
-                  <li>Front and Rear Cross-Traffic Alert w/pedestrian detection and automatic braking</li>
-                  <li>Acoustic Vehicle Alert System</li>
-                  <li>Active Emergency Stop Assist</li>
-                  <li>Active Speed Limit Assist</li>
-                  <li>Active Steering Assist</li>
-                  <li>Active Blind Spot Assist</li>
-                  <li>Active Lane Keeping Assist</li>
-                  <li>Active Lane Change Assist</li>
-                  <li>Extended Restart in Stop-and-Go Traffic</li>
-                  <li>Active Stop-and-Go Assist</li>
-                  <li>Adaptive braking technology</li>
-                  <li>7 air bags</li>
-                  <li>Rear side-impact air bags</li>
-                  <li>SmartKey with KEYLESS-START</li>
-                  <li>AMG Performance 4MATIC+ all-wheel drive</li>
-                  <li>Intelligent Energy Recovery with paddles</li>
-                  <li>AMG DYNAMIC SELECT</li>
-                  <li>AMG DRIVE UNIT</li>
-                  <li>AMG DYNAMIC PLUS Package</li>
-                  <li>Advanced 108.4-kWh EV battery</li>
-                  <li>Multiple charging options</li>
-                  <li>Antitheft alarm system</li>
-                  <li>GUARD 360° security system</li>
-                  </ul>)}
+                  <ul className='list-disc ml-7'>
+                      {maybachFeatures3.map((feature, index) => (
+                      <li key={index}>{feature}</li>
+                      ))}
+                  </ul>
+                 )}
                 </div>
                 <div onClick={toggleFeatures3} className='flex text-white justify-between lg:mt-[37px] mt-2 border rounded-md p-2 bg-[#8d2acf]'>
                     <button>

@@ -20,14 +20,14 @@ This project showcases a user-friendly platform for buying and selling Mercedes 
   - JavaScript: Implement interactive features and functionalities.
   - React.js: Build a dynamic and responsive user interface.
   - Next.js : Used for server side rendering and better  performance.
-  - React Router: Enable navigation between different pages of the website.
+  - Next App Router: Enable navigation between different pages of the website.
   - Tailwind CSS: Utilize utility-first CSS framework for rapid styling.
   - React Icons: Incorporate customizable icons for enhanced visual appeal.
 
 ## What I Learned
 Through developing this website, I gained valuable insights and skills in:
 - Creating a responsive and visually appealing user interface using React.js & Next.js and Tailwind CSS.
-- Implementing dynamic routing and navigation with React Router.
+- Implementing dynamic routing and navigation with Next App Router.
 - Enhancing user experience through interactive features and smooth transitions.
 - Styling components efficiently with Tailwind CSS for a consistent design aesthetic.
 - Integrating third-party libraries like React Icons to enhance website functionality.
