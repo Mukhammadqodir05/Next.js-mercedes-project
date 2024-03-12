@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mercedes Selling Website
 
-## Getting Started
+Live Demo: https://mercedesbenz.vercel.app/
 
-First, run the development server:
+This project showcases a user-friendly platform for buying and selling Mercedes vehicles online.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+- Browse Mercedes Cars: Discover a diverse selection of Mercedes models available for sale, categorized by type and specifications.
+- Detailed Listings: Access detailed information about each vehicle, including high-quality photos, specifications, pricing, and seller contact details.
+- Easy Contact: Seamlessly connect with sellers or buyers through our integrated messaging system, facilitating smooth communication and negotiation.
+- Smooth User Experience: Enjoy a visually appealing and intuitive browsing experience designed to cater to car enthusiasts and streamline the buying/selling process.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screenshots
+![alt text](mercedes.png)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Technologies Used
+- Frontend:
+  - HTML: Structure the content of the website.
+  - CSS: Style the layout and design elements.
+  - JavaScript: Implement interactive features and functionalities.
+  - React.js: Build a dynamic and responsive user interface.
+  - Next.js : Used for server side rendering and better  performance.
+  - React Router: Enable navigation between different pages of the website.
+  - Tailwind CSS: Utilize utility-first CSS framework for rapid styling.
+  - React Icons: Incorporate customizable icons for enhanced visual appeal.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## What I Learned
+Through developing this website, I gained valuable insights and skills in:
+- Creating a responsive and visually appealing user interface using React.js & Next.js and Tailwind CSS.
+- Implementing dynamic routing and navigation with React Router.
+- Enhancing user experience through interactive features and smooth transitions.
+- Styling components efficiently with Tailwind CSS for a consistent design aesthetic.
+- Integrating third-party libraries like React Icons to enhance website functionality.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Next Steps
+To further improve this project, consider implementing the following enhancements:
+- Implement user authentication for secure messaging and account management.
+- Integrate a payment gateway for seamless transactions between buyers and sellers.
+- Enhance search functionality with filters and sorting options for better browsing experience.
+- Optimize performance and loading times for improved website responsiveness.
+- Conduct user testing to gather feedback and iterate on design and functionality based on user preferences.
