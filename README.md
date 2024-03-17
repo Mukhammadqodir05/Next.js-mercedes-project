@@ -1,6 +1,6 @@
 # Mercedes Selling Website
 
-Live Demo: https://mercedesbenz.vercel.app/
+Live Demo: https://mercedesbenz.vercel.app/](https://nextjs-mercedes-app.vercel.app
 
 This project showcases a user-friendly platform for buying and selling Mercedes vehicles online.
 
